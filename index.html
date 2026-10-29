@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpet Selling Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #657461;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+	nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .carpet {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: calc(33% - 40px); /* 3 items per row */
+        }
+        .carpet img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .price {
+            font-size: 1.5em;
+            color: #333;
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #657461;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .carpet {
+                width: calc(50% - 40px); /* 2 items per row */
+            }
+        }
+        @media (max-width: 480px) {
+            .carpet {
+                width: 100%; /* 1 item per row */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our NatureRugs</h1>
+	<nav>
+         	<a href="about.html">about us</a>
+          	<a href="login.html">login</a>
+       		 <a href="products.html">products</a>
+   </nav>
+        <p>Quality carpets at unbeatable prices!</p>
+    </header>
+
+    <div class="container">
+        <div class="carpet">
+            <img src="carpet.jpg" alt="Carpet 1">
+            <h2>Elegant Persian Carpet</h2>
+            <p class="price">₹2999</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="carpet">
+            <img src="carpet2.jpg" alt="Carpet 2">
+            <h2>Modern Abstract Carpet</h2>
+            <p class="price">₹1999</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="carpet">
+            <img src="carpet3.jpg" alt="Carpet 3">
+            <h2>Classic Oriental Carpet</h2>
+            <p class="price">₹3499</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="carpet">
+            <img src="carpet 4.jpg"alt="Carpet 4">
+            <h2>Luxury Shag Carpet</h2>
+            <p class="price">₹2499</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="carpet">
+            <img src="carpet5.jpg" alt="Carpet 5">
+            <h2>Eco-Friendly Carpet</h2>
+            <p class="price">₹1799</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="carpet">
+            <img src="carpet6.jpg" alt="Carpet 6">
+            <h2>Vintage Wool Carpet</h2>
+            <p class="price">₹399</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 NatureRugs. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
